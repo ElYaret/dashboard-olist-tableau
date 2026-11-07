@@ -1,0 +1,900 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20263.26.1022.1645                               -->
+<workbook _.fcp.WorkbookFingerprinting.true...author-id='be3ea5578f2c5232f713c684152dff7724bfdd43c794d555cdb3cef8aeb66c74' _.fcp.WorkbookFingerprinting.true...creator-author-id='be3ea5578f2c5232f713c684152dff7724bfdd43c794d555cdb3cef8aeb66c74' _.fcp.WorkbookFingerprinting.true...creator-license-type='public' _.fcp.WorkbookFingerprinting.true...creator-machine-id='be3ea5578f2c5232f713c684152dff7724bfdd43c794d555cdb3cef8aeb66c74' _.fcp.WorkbookFingerprinting.true...license-type='public' _.fcp.WorkbookFingerprinting.true...machine-id='be3ea5578f2c5232f713c684152dff7724bfdd43c794d555cdb3cef8aeb66c74' original-version='18.1' source-build='2026.3.0 (20263.26.1022.1645)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <_.fcp.WorkbookFingerprinting.true...WorkbookFingerprinting />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='ventas_mensuales' inline='true' name='federated.10db5hd0jygfx31a24fog060z99c' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='ventas_mensuales' name='textscan.1ig3wk31pmzmza18pejhq1wfp7by'>
+            <connection class='textscan' directory='F:/Proyecto Senior/dashboard-olist-tableau/data' filename='ventas_mensuales.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1ig3wk31pmzmza18pejhq1wfp7by' name='ventas_mensuales.csv' table='[ventas_mensuales#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='es_PE' separator=','>
+            <column datatype='date' name='mes' ordinal='0' />
+            <column datatype='real' name='ingresos' ordinal='1' />
+            <column datatype='real' name='ingresos_mes_anterior' ordinal='2' />
+            <column datatype='real' name='crecimiento_pct' ordinal='3' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[ventas_mensuales.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;es&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;S/&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;es_PE&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mes</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[mes]</local-name>
+            <parent-name>[ventas_mensuales.csv]</parent-name>
+            <remote-alias>mes</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ventas_mensuales.csv_A3414F9E650C4006A432A6728D574EDA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ingresos</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ingresos]</local-name>
+            <parent-name>[ventas_mensuales.csv]</parent-name>
+            <remote-alias>ingresos</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ventas_mensuales.csv_A3414F9E650C4006A432A6728D574EDA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ingresos_mes_anterior</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ingresos_mes_anterior]</local-name>
+            <parent-name>[ventas_mensuales.csv]</parent-name>
+            <remote-alias>ingresos_mes_anterior</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ventas_mensuales.csv_A3414F9E650C4006A432A6728D574EDA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>crecimiento_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[crecimiento_pct]</local-name>
+            <parent-name>[ventas_mensuales.csv]</parent-name>
+            <remote-alias>crecimiento_pct</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ventas_mensuales.csv_A3414F9E650C4006A432A6728D574EDA]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='ventas_mensuales.csv' datatype='table' name='[__tableau_internal_object_id__].[ventas_mensuales.csv_A3414F9E650C4006A432A6728D574EDA]' role='measure' type='quantitative' />
+      <column caption='Crecimiento Pct' datatype='real' name='[crecimiento_pct]' role='measure' type='quantitative' />
+      <column caption='Ingresos' datatype='real' name='[ingresos]' role='measure' type='quantitative' />
+      <column caption='Ingresos Mes Anterior' datatype='real' name='[ingresos_mes_anterior]' role='measure' type='quantitative' />
+      <column caption='Mes' datatype='datetime' name='[mes]' role='dimension' type='ordinal' />
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' author-locale='es_ES' class='hyper' dbname='Data/TableauTemp/#TableauTemp_0fz81qz03fgrrf164kzm50rys1ey.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='11/07/2026 03:09:55 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>mes</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[mes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>mes</remote-alias>
+              <ordinal>0</ordinal>
+              <family>ventas_mensuales.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ventas_mensuales.csv_A3414F9E650C4006A432A6728D574EDA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ingresos</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[ingresos]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ingresos</remote-alias>
+              <ordinal>1</ordinal>
+              <family>ventas_mensuales.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ventas_mensuales.csv_A3414F9E650C4006A432A6728D574EDA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ingresos_mes_anterior</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[ingresos_mes_anterior]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ingresos_mes_anterior</remote-alias>
+              <ordinal>2</ordinal>
+              <family>ventas_mensuales.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ventas_mensuales.csv_A3414F9E650C4006A432A6728D574EDA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>crecimiento_pct</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[crecimiento_pct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>crecimiento_pct</remote-alias>
+              <ordinal>3</ordinal>
+              <family>ventas_mensuales.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ventas_mensuales.csv_A3414F9E650C4006A432A6728D574EDA]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Perú&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='ventas_mensuales.csv' id='ventas_mensuales.csv_A3414F9E650C4006A432A6728D574EDA'>
+            <properties context=''>
+              <relation connection='textscan.1ig3wk31pmzmza18pejhq1wfp7by' name='ventas_mensuales.csv' table='[ventas_mensuales#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='es_PE' separator=','>
+                  <column datatype='date' name='mes' ordinal='0' />
+                  <column datatype='real' name='ingresos' ordinal='1' />
+                  <column datatype='real' name='ingresos_mes_anterior' ordinal='2' />
+                  <column datatype='real' name='crecimiento_pct' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='pedidos_por_estado' inline='true' name='federated.04fkqt31mmeezx1awiwcf01qj50y' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='pedidos_por_estado' name='textscan.0vqgd1f1u0tgd6147e6uv1w1y2er'>
+            <connection class='textscan' directory='F:/Proyecto Senior/dashboard-olist-tableau/data' filename='pedidos_por_estado.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0vqgd1f1u0tgd6147e6uv1w1y2er' name='pedidos_por_estado.csv' table='[pedidos_por_estado#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='es_PE' separator=','>
+            <column datatype='string' name='customer_state' ordinal='0' />
+            <column datatype='integer' name='total_pedidos' ordinal='1' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[pedidos_por_estado.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;es&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;S/&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;es_PE&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_state</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[customer_state]</local-name>
+            <parent-name>[pedidos_por_estado.csv]</parent-name>
+            <remote-alias>customer_state</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[pedidos_por_estado.csv_35F6900CF27D467CB7607D55CC52EE5A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_pedidos</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_pedidos]</local-name>
+            <parent-name>[pedidos_por_estado.csv]</parent-name>
+            <remote-alias>total_pedidos</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[pedidos_por_estado.csv_35F6900CF27D467CB7607D55CC52EE5A]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='pedidos_por_estado.csv' datatype='table' name='[__tableau_internal_object_id__].[pedidos_por_estado.csv_35F6900CF27D467CB7607D55CC52EE5A]' role='measure' type='quantitative' />
+      <column caption='Customer State' datatype='string' name='[customer_state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Total Pedidos' datatype='integer' name='[total_pedidos]' role='measure' type='quantitative' />
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' author-locale='es_ES' class='hyper' dbname='Data/TableauTemp/#TableauTemp_1rtjxmc1xttagw18tsky10in1xi8.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='11/07/2026 03:33:26 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>customer_state</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[customer_state]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>customer_state</remote-alias>
+              <ordinal>0</ordinal>
+              <family>pedidos_por_estado.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[pedidos_por_estado.csv_35F6900CF27D467CB7607D55CC52EE5A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_pedidos</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[total_pedidos]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total_pedidos</remote-alias>
+              <ordinal>1</ordinal>
+              <family>pedidos_por_estado.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[pedidos_por_estado.csv_35F6900CF27D467CB7607D55CC52EE5A]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Perú&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='pedidos_por_estado.csv' id='pedidos_por_estado.csv_35F6900CF27D467CB7607D55CC52EE5A'>
+            <properties context=''>
+              <relation connection='textscan.0vqgd1f1u0tgd6147e6uv1w1y2er' name='pedidos_por_estado.csv' table='[pedidos_por_estado#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='es_PE' separator=','>
+                  <column datatype='string' name='customer_state' ordinal='0' />
+                  <column datatype='integer' name='total_pedidos' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='entregas_por_estado' inline='true' name='federated.19f2wz10rouptm13a9lw80bpejby' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='entregas_por_estado' name='textscan.0bgd3ef0vwzjm90zw5jup1n4ktbv'>
+            <connection class='textscan' directory='F:/Proyecto Senior/dashboard-olist-tableau/data' filename='entregas_por_estado.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0bgd3ef0vwzjm90zw5jup1n4ktbv' name='entregas_por_estado.csv' table='[entregas_por_estado#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='es_PE' separator=','>
+            <column datatype='string' name='customer_state' ordinal='0' />
+            <column datatype='integer' name='pedidos' ordinal='1' />
+            <column datatype='real' name='dias_reales' ordinal='2' />
+            <column datatype='real' name='dias_estimados' ordinal='3' />
+            <column datatype='real' name='pct_tardios' ordinal='4' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[entregas_por_estado.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;es&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;S/&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;es_PE&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_state</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[customer_state]</local-name>
+            <parent-name>[entregas_por_estado.csv]</parent-name>
+            <remote-alias>customer_state</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[entregas_por_estado.csv_A33E72FE25EB4AAA94BD3148B9058990]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pedidos</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[pedidos]</local-name>
+            <parent-name>[entregas_por_estado.csv]</parent-name>
+            <remote-alias>pedidos</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[entregas_por_estado.csv_A33E72FE25EB4AAA94BD3148B9058990]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dias_reales</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[dias_reales]</local-name>
+            <parent-name>[entregas_por_estado.csv]</parent-name>
+            <remote-alias>dias_reales</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[entregas_por_estado.csv_A33E72FE25EB4AAA94BD3148B9058990]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dias_estimados</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[dias_estimados]</local-name>
+            <parent-name>[entregas_por_estado.csv]</parent-name>
+            <remote-alias>dias_estimados</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[entregas_por_estado.csv_A33E72FE25EB4AAA94BD3148B9058990]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pct_tardios</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[pct_tardios]</local-name>
+            <parent-name>[entregas_por_estado.csv]</parent-name>
+            <remote-alias>pct_tardios</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[entregas_por_estado.csv_A33E72FE25EB4AAA94BD3148B9058990]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='entregas_por_estado.csv' datatype='table' name='[__tableau_internal_object_id__].[entregas_por_estado.csv_A33E72FE25EB4AAA94BD3148B9058990]' role='measure' type='quantitative' />
+      <column caption='Customer State' datatype='string' name='[customer_state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Dias Estimados' datatype='real' name='[dias_estimados]' role='measure' type='quantitative' />
+      <column caption='Dias Reales' datatype='real' name='[dias_reales]' role='measure' type='quantitative' />
+      <column caption='Pct Tardios' datatype='real' name='[pct_tardios]' role='measure' type='quantitative' />
+      <column caption='Pedidos' datatype='integer' name='[pedidos]' role='measure' type='quantitative' />
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' author-locale='es_ES' class='hyper' dbname='Data/TableauTemp/#TableauTemp_0n631i805hisav167xpmu1d5pu1q.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='11/07/2026 03:45:28 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>customer_state</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[customer_state]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>customer_state</remote-alias>
+              <ordinal>0</ordinal>
+              <family>entregas_por_estado.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[entregas_por_estado.csv_A33E72FE25EB4AAA94BD3148B9058990]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>pedidos</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[pedidos]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>pedidos</remote-alias>
+              <ordinal>1</ordinal>
+              <family>entregas_por_estado.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[entregas_por_estado.csv_A33E72FE25EB4AAA94BD3148B9058990]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>dias_reales</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[dias_reales]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>dias_reales</remote-alias>
+              <ordinal>2</ordinal>
+              <family>entregas_por_estado.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>23</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[entregas_por_estado.csv_A33E72FE25EB4AAA94BD3148B9058990]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>dias_estimados</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[dias_estimados]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>dias_estimados</remote-alias>
+              <ordinal>3</ordinal>
+              <family>entregas_por_estado.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[entregas_por_estado.csv_A33E72FE25EB4AAA94BD3148B9058990]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>pct_tardios</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[pct_tardios]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>pct_tardios</remote-alias>
+              <ordinal>4</ordinal>
+              <family>entregas_por_estado.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>24</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[entregas_por_estado.csv_A33E72FE25EB4AAA94BD3148B9058990]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Perú&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='entregas_por_estado.csv' id='entregas_por_estado.csv_A33E72FE25EB4AAA94BD3148B9058990'>
+            <properties context=''>
+              <relation connection='textscan.0bgd3ef0vwzjm90zw5jup1n4ktbv' name='entregas_por_estado.csv' table='[entregas_por_estado#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='es_PE' separator=','>
+                  <column datatype='string' name='customer_state' ordinal='0' />
+                  <column datatype='integer' name='pedidos' ordinal='1' />
+                  <column datatype='real' name='dias_reales' ordinal='2' />
+                  <column datatype='real' name='dias_estimados' ordinal='3' />
+                  <column datatype='real' name='pct_tardios' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Entregas tardias por estado'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='entregas_por_estado' name='federated.19f2wz10rouptm13a9lw80bpejby' />
+          </datasources>
+          <datasource-dependencies datasource='federated.19f2wz10rouptm13a9lw80bpejby'>
+            <column caption='Customer State' datatype='string' name='[customer_state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[customer_state]' derivation='None' name='[none:customer_state:nk]' pivot='key' type='nominal' />
+            <column caption='Pct Tardios' datatype='real' name='[pct_tardios]' role='measure' type='quantitative' />
+            <column caption='Pedidos' datatype='integer' name='[pedidos]' role='measure' type='quantitative' />
+            <column-instance column='[pct_tardios]' derivation='Sum' name='[sum:pct_tardios:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[pedidos]' derivation='Sum' name='[sum:pedidos:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.19f2wz10rouptm13a9lw80bpejby].[none:customer_state:nk]' direction='DESC' using='[federated.19f2wz10rouptm13a9lw80bpejby].[sum:pct_tardios:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.19f2wz10rouptm13a9lw80bpejby].[sum:pct_tardios:qk]' scope='cols' value='% de Pedidos Tardios' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.19f2wz10rouptm13a9lw80bpejby].[sum:pct_tardios:qk]' value='*0.0&quot;%&quot;' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.19f2wz10rouptm13a9lw80bpejby].[sum:pct_tardios:qk]' value='*0.0&quot;%&quot;' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.19f2wz10rouptm13a9lw80bpejby].[sum:pct_tardios:qk]' />
+              <tooltip column='[federated.19f2wz10rouptm13a9lw80bpejby].[sum:pedidos:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.19f2wz10rouptm13a9lw80bpejby].[none:customer_state:nk]</rows>
+        <cols>[federated.19f2wz10rouptm13a9lw80bpejby].[sum:pct_tardios:qk]</cols>
+      </table>
+      <simple-id uuid='{D33C5A9B-1CB3-4DD3-9884-3BC506B57D3D}' />
+    </worksheet>
+    <worksheet name='Pedidos por estado'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='pedidos_por_estado' name='federated.04fkqt31mmeezx1awiwcf01qj50y' />
+          </datasources>
+          <datasource-dependencies datasource='federated.04fkqt31mmeezx1awiwcf01qj50y'>
+            <column caption='Customer State' datatype='string' name='[customer_state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[customer_state]' derivation='None' name='[none:customer_state:nk]' pivot='key' type='nominal' />
+            <column-instance column='[total_pedidos]' derivation='Sum' name='[sum:total_pedidos:qk]' pivot='key' type='quantitative' />
+            <column caption='Total Pedidos' datatype='integer' name='[total_pedidos]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.04fkqt31mmeezx1awiwcf01qj50y].[none:customer_state:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.04fkqt31mmeezx1awiwcf01qj50y].[sum:total_pedidos:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.04fkqt31mmeezx1awiwcf01qj50y].[none:customer_state:nk]</rows>
+        <cols>[federated.04fkqt31mmeezx1awiwcf01qj50y].[sum:total_pedidos:qk]</cols>
+      </table>
+      <simple-id uuid='{607B095E-80DB-4687-9EC8-19D8ADC904F4}' />
+    </worksheet>
+    <worksheet name='Ventas mensuales'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Ventas mensuales (ene 2017 – ago 2018)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ventas_mensuales' name='federated.10db5hd0jygfx31a24fog060z99c' />
+          </datasources>
+          <datasource-dependencies datasource='federated.10db5hd0jygfx31a24fog060z99c'>
+            <column caption='Ingresos' datatype='real' name='[ingresos]' role='measure' type='quantitative' />
+            <column caption='Mes' datatype='datetime' name='[mes]' role='dimension' type='ordinal' />
+            <column-instance column='[ingresos]' derivation='Sum' name='[sum:ingresos:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[mes]' derivation='Month-Trunc' name='[tmn:mes:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.10db5hd0jygfx31a24fog060z99c].[tmn:mes:qk]' scope='cols' value='Mes' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.10db5hd0jygfx31a24fog060z99c].[sum:ingresos:qk]' value='c&quot;R$&quot;#,##0,K;-&quot;R$&quot;#,##0,K' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.10db5hd0jygfx31a24fog060z99c].[sum:ingresos:qk]</rows>
+        <cols>[federated.10db5hd0jygfx31a24fog060z99c].[tmn:mes:qk]</cols>
+      </table>
+      <simple-id uuid='{10B71E3A-2E0C-4846-ADC7-5543445D0358}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Olist: ventas, pedidos y entregas </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size maxheight='1250' maxwidth='1100' minheight='1250' minwidth='1100' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98720' id='15' param='vert' type-v2='layout-flow' w='98546' x='727' y='640'>
+            <zone h='3120' id='16' type-v2='title' w='98546' x='727' y='640'>
+              <zone-style>
+                <format attr='border-color' value='#444444' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='95600' id='12' param='horz' type-v2='layout-flow' w='98546' x='727' y='3760'>
+              <zone h='95600' id='10' type-v2='layout-basic' w='98546' x='727' y='3760'>
+                <zone h='39860' id='3' param='vert' type-v2='layout-flow' w='98546' x='727' y='3760'>
+                  <zone h='39860' id='5' name='Ventas mensuales' w='98546' x='727' y='3760'>
+                    <layout-cache minheight='196' type-h='scalable' type-w='fixed' />
+                    <zone-style>
+                      <format attr='border-color' value='#444444' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+                <zone h='55740' id='6' param='horz' type-v2='layout-flow' w='49273' x='727' y='43620'>
+                  <zone h='55740' id='7' name='Pedidos por estado' w='49273' x='727' y='43620'>
+                    <layout-cache minwidth='180' type-h='fixed' type-w='scalable' />
+                    <zone-style>
+                      <format attr='border-color' value='#444444' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+                <zone h='55740' id='8' param='horz' type-v2='layout-flow' w='49273' x='50000' y='43620'>
+                  <zone h='55740' id='9' name='Entregas tardias por estado' w='49273' x='50000' y='43620'>
+                    <layout-cache minwidth='180' type-h='fixed' type-w='scalable' />
+                    <zone-style>
+                      <format attr='border-color' value='#444444' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#444444' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run fontcolor='#000000' fontname='Benton Sans Book'>Olist: ventas, pedidos y entregas </run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='950' minheight='950' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='26' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98316' id='25' param='vert' type-v2='layout-flow' w='95734' x='2133' y='842'>
+                <zone h='7368' id='16' type-v2='title' w='95734' x='2133' y='842'>
+                  <zone-style>
+                    <format attr='border-color' value='#444444' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='30316' id='5' is-fixed='true' name='Ventas mensuales' w='95734' x='2133' y='8210'>
+                  <layout-cache minheight='196' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#444444' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='30316' id='7' is-fixed='true' name='Pedidos por estado' w='95734' x='2133' y='38526'>
+                  <layout-cache minwidth='180' type-h='fixed' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#444444' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='30316' id='9' is-fixed='true' name='Entregas tardias por estado' w='95734' x='2133' y='68842'>
+                  <layout-cache minwidth='180' type-h='fixed' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#444444' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#444444' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{D816B326-703E-434C-BFBA-7E1A06C8626F}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='72'>
+    <window class='worksheet' name='Ventas mensuales'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='38'>
+            <card type='columns' />
+          </strip>
+          <strip size='38'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0352B99F-F707-47EC-9DC4-14CD95452A10}' />
+    </window>
+    <window class='worksheet' name='Pedidos por estado'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B933F367-A12C-40DD-84D4-A0D6E67B668F}' />
+    </window>
+    <window class='worksheet' name='Entregas tardias por estado'>
+      <cards>
+        <edge name='left'>
+          <strip size='213'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='175'>
+            <card pane-specification-id='0' param='[federated.19f2wz10rouptm13a9lw80bpejby].[sum:pct_tardios:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{8E99C0A6-A9F4-4A86-9F3C-D82C0549D7C5}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Entregas tardias por estado'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Pedidos por estado'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Ventas mensuales'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{736E1F9A-A941-4408-8E15-4EA6E5B242F3}' />
+    </window>
+  </windows>
+</workbook>
