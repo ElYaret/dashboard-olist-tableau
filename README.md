@@ -1,4 +1,4 @@
-# 📈 Dashboard ejecutivo — Olist E-Commerce (Tableau)
+# 📈 Dashboard ejecutivo — Olist E-Commerce (Tableau y Power BI).
 
 ## Problema de negocio
 Resumir en una sola pantalla cómo evolucionan las ventas, dónde se concentran los pedidos y en qué regiones falla el cumplimiento de las entregas.
@@ -7,6 +7,13 @@ Resumir en una sola pantalla cómo evolucionan las ventas, dónde se concentran 
 ![Dashboard](./dashboard.png)
 
 👉 [Ver el dashboard interactivo en Tableau Public](https://public.tableau.com/app/profile/josue.flores4336/viz/Olistventaspedidosyentregas/Dashboard1)
+
+## Versión en Power BI
+Mismo dashboard construido en Power BI Desktop, conectado directamente a PostgreSQL (modo Importar) con las mismas consultas SQL, sin pasar por CSV.
+
+![Dashboard Power BI](./powerbi/dashboard-powerbi.png)
+
+El archivo `powerbi/olist-dashboard.pbix` se abre con Power BI Desktop. Para actualizarlo hace falta una base `olist_ecommerce` local con las tablas del proyecto [sql-analytics-olist](https://github.com/ElYaret/sql-analytics-olist).
 
 ## Datos
 - Fuente: [Brazilian E-Commerce Public Dataset by Olist (Kaggle)](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
@@ -30,9 +37,10 @@ Resumir en una sola pantalla cómo evolucionan las ventas, dónde se concentran 
 - Las entregas tardías solo incluyen pedidos marcados como entregados, así que los atrasos reales probablemente son mayores.
 
 ## Tecnologías usadas
-Tableau Public, PostgreSQL, SQL
+Tableau Public, Power BI Desktop, PostgreSQL, SQL.
 
 ## Contenido del repositorio
 - `dashboard.png`: captura del dashboard
 - `data/`: los tres CSV
 - el workbook de Tableau (`.twbx`), que se abre con Tableau Public
+- `powerbi/`: versión en Power BI (`.pbix` y captura).
